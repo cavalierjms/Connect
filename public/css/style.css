@@ -201,3 +201,14 @@ img {
   clear: both;
   display: block;
 }
+.show_contents {
+  width: 1200px;
+}
+.item_box2 {
+  display: flex;
+  justify-content: center;
+}
+.item_box2 img {
+  width: 200px;
+  height: 300px;
+}

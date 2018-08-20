@@ -5,7 +5,7 @@
   @foreach($products as $product)
   <!-- <div class="content_post" style="background-image: url({{ $product->product_image }});"> -->
   <div class="content_post">
-    <img src="images/{{$product->product_image}}" alt="">
+    <a href="{{ $product->id }}"><img src="images/{{$product->product_image}}" alt=""></a>
     <p>{{ $product->title}}</p>
       <p>{{ $product->detail }}</p>
       <p>{{ $product->price}}円</p>

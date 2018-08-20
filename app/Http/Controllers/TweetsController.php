@@ -26,6 +26,10 @@ class TweetsController extends Controller
     $categories = Category::all();
     return view('tweets.create')->with('categories', $categories);
   }
+  public function show($id) {
+    $product = Product::find($id);
+    return view('tweets.show')->with('product',$product);
+  }
   public function store(Request $request) {
     $fileName = $request['product_image']->getClientOriginalName();
     Image::make($request['product_image'])->save(public_path() . '/images/' . $fileName);
