@@ -8,7 +8,7 @@ class Category extends Model
 {
   protected $fillable =['category',];
 
-  public function products()
+  public function products() //categoryにたいして、たくさんのproductが存在するため、複数形で書く
   {
     return $this->hasMany(Product::class);
   }

@@ -26,7 +26,7 @@
     </div>
       <div class="navi">
       <ul>
-         <li><a href="#">カテゴリー</a></li>
+         <li><a href="#">カテゴリーから探す</a></li>
          <li><a href="#">connectについて</a></li>
          <li><a href="tweets.contact">お問い合わせ</a></li>
          <li><a href="tweets.create">出品</a></li>
