@@ -19,10 +19,12 @@ Route::group(['middleware' => ['web']], function () {
     Route::auth();
     Route::get('/','TweetsController@index');
     Route::get('/tweets', 'TweetsController@index');
-    Route::get('/tweets.contact' ,'TweetsController@contact');
-    Route::get('/tweets.create','TweetsController@create');
+    Route::get('/tweets/contact' ,'TweetsController@contact');
+    Route::get('/tweets/create','TweetsController@create');
     Route::post('/tweets','TweetsController@store');
     Route::get('/tweets.serch','TweetsController@serch');
     Route::get('/{product}','TweetsController@show');
+    Route::get('/categories/category','CategoriesController@category');
+    Route::get('/category/{category}', 'CategoriesController@show'); //{}中身の記述はなんでもいいがわかりやすいものにする
 
 });

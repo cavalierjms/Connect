@@ -9,7 +9,7 @@
   <body>
     <header>
       <div class="heading">
-        <a href="/tweets"><img src="images/connect.png" alt="" id="connect"></a>
+        <a href="/tweets"><img src="/images/connect.png" alt="" id="connect"></a>
         <form id="form5" action='tweets.serch'>
           <input id="sbox5" name="keyword" type="text" placeholder="キーワードを入力" />
            <input id="sbtn5" type="submit" value="検索" onclick="tweets.serch"/></a>
@@ -26,10 +26,10 @@
     </div>
       <div class="navi">
       <ul>
-         <li><a href="#">カテゴリーから探す</a></li>
+         <li><a href="/categories/category">カテゴリーから探す</a></li>
          <li><a href="#">connectについて</a></li>
-         <li><a href="tweets.contact">お問い合わせ</a></li>
-         <li><a href="tweets.create">出品</a></li>
+         <li><a href="/tweets/contact">お問い合わせ</a></li>
+         <li><a href="/tweets/create">出品</a></li>
       </ul>
       </div>
 
